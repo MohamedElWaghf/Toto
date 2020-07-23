@@ -10,7 +10,7 @@ julia:
 notifications:
   email: false
   
-script:
+before_script:
   - julia -e 'using Pkg; Pkg.instantiate(); Pkg.develop(PackageSpec(path=pwd()))'
   
 jobs:
